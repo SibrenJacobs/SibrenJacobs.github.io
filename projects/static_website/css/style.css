@@ -1,0 +1,429 @@
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #111;
+    background-color: #cfe7fc;
+}
+
+/* HEADER */
+
+header {
+    background-color: #EEE;
+}
+
+nav {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    height: 100px;
+    display: block;
+    font-size: 2rem;
+    background: url("../img/omslag.jpg") no-repeat;
+    background-size: cover;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    font-weight: 900;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.25rem;
+    border-top: #EEE solid 0.25rem;
+    border-bottom: #EEE solid 0.25rem;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav li:first-child {
+    grid-column: span 2;
+}
+
+nav a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #222;
+    background-color: #CCC;
+    display: block;
+    padding: 0.5rem 0;
+    transition: background-color 0.3s;
+}
+
+nav a.current {
+    color: #EEE;
+    background-color: #333;
+}
+
+nav a:hover {
+    color: #EEE;
+    background-color: #555;
+}
+
+nav a:focus {
+    color: #EEE;
+    background-color: #555;
+}
+
+header {
+    border-bottom: solid #333 1.2rem;
+}
+
+/* MAIN */
+
+main {
+    font-size: 1.2rem;
+    margin: 1rem;
+    line-height: 1.6rem;
+}
+
+main article {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+main h2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+main article p {
+    margin: 1rem 0;
+}
+
+main article article {
+    margin-top: 1.2rem;
+    margin-bottom: 1.8em;
+}
+
+main h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+main img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+main img[src="img/logoMaximaal.png"] {
+    display: block;
+    margin: 3rem auto;
+    max-height: 205px;
+    max-width: 400px;
+}
+
+main a {
+    color: #5700AD;
+    font-weight: 600;
+}
+
+main a:focus {
+    color: #EEEEEE;
+    background-color: #5700AD;
+    padding: 2px;
+}
+
+main h4 {
+    margin-top: 0.5rem;
+    text-decoration: underline;
+}
+
+/* FORM */
+
+form fieldset {
+    display: block;
+    margin: 1rem auto;
+}
+
+form legend {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+form p {
+    margin: 0.5rem 0;
+}
+
+form input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.3rem;
+}
+
+form textarea {
+    resize: none;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+}
+
+form input#submit {
+    width: 200px;
+    height: 2.5rem;
+    margin: 1rem auto;
+    color: #222;
+    background-color: #CCC;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: #222 solid 1px;
+    transition: background-color 0.3s;
+}
+
+form input#submit:hover {
+    color: #EEE;
+    background-color: #555;
+    border: #222 solid 1px;
+    cursor: pointer;
+}
+
+form input#submit:focus {
+    color: #EEE;
+    background-color: #555;
+    border: #222 solid 1px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: solid #333 1.2rem;
+    padding: 1rem;
+    background-color: #EEE;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+footer a {
+    margin-left: 1rem;
+    padding: 0.2rem;
+}
+
+footer a:focus {
+    border: #222 dashed 2px;
+}
+
+/* MISCELLANEOUS */
+
+#adres_lokaal {
+    box-sizing: border-box;
+    margin: 1rem 0;
+    border: solid #222 2px;
+    padding: 0.5rem;
+}
+
+#adres_lokaal p {
+    margin: 0.2rem 0;
+}
+
+#adres_lokaal+iframe {
+    margin-top: 1rem;
+    width: 100%;
+    height: 400px;
+}
+
+span {
+    /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#google_calendar {
+    width: 100%;
+    height: 90vw;
+    max-height: 1200px;
+}
+
+#google_map {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60vw;
+}
+
+@media all and (min-width: 600px) {
+    /* HEADER */
+    h1 {
+        height: 125px;
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.25rem;
+        background-color: #EEE;
+        border-bottom: #EEE solid 0.25rem;
+    }
+
+    nav li {
+        text-align: center;
+        background-color: #CCC;
+    }
+
+    nav li:first-child {
+        grid-column: span 3;
+    }
+
+    .grid_leiding {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.6rem;
+    }
+
+    /* FORM */
+
+    form fieldset {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    form p {
+        display: flex;
+    }
+
+    form input:not(#submit) {
+        flex: 1 1 auto;
+        margin-left: 1rem;
+    }
+}
+
+@media all and (min-width: 720px) {
+    /* HEADER */
+    h1 {
+        height: 150px;
+        font-size: 3rem;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0.25rem;
+        background-color: #EEE;
+        border-bottom: #EEE solid 0.25rem;
+    }
+
+    nav li {
+        text-align: center;
+        background-color: #CCC;
+    }
+
+    nav li:first-child {
+        grid-column: span 2;
+    }
+
+    /* MAIN */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.6rem;
+        grid-row-gap: 1rem;
+    }
+
+    .grid img+div {
+        grid-column: span 2;
+    }
+
+    .grid article+div {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    main img[src="img/logoMaximaal.png"] {
+        max-height: 256px;
+        max-width: 500px;
+    }
+
+    /* MISCELLANEOUS */
+    #google_map {
+        width: 100%;
+        height: 30vw;
+        max-height: 420px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    /* HEADER */
+    h1 {
+        height: 175px;
+        font-size: 3.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    nav li {
+        text-align: center;
+        background-color: #CCC;
+        flex: 1 0 auto;
+    }
+
+    nav li:first-child {
+        flex-grow: 2;
+    }
+
+    /* MAIN */
+    #activiteiten {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    #activiteiten article {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-right: 0.5rem
+    }
+
+    #activiteiten li:nth-child(-n+2) {
+        border-right: solid #333 2px;
+    }
+
+    .grid_leiding {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1.6rem;
+    }
+
+    /* MISCELLANEOUS */
+    #google_map {
+        padding-right: 0.5rem;
+    }
+}
+
+@media all and (min-width: 1250px) {
+    h1 {
+        height: 200px;
+        font-size: 4rem;
+    }
+
+    main {
+        width: 1250px;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* MISCELLANEOUS */
+    #google_map {
+        padding-right: 1rem;
+    }
+}
